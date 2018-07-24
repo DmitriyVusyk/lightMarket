@@ -6,6 +6,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -13,7 +14,7 @@ import java.security.Principal;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
-@Service
+@Repository
 public class SecurityService {
 
     public ModelAndView getSecurityModel(String uri, Authentication authenticationz){

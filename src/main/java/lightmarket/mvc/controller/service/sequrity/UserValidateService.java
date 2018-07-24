@@ -3,6 +3,7 @@ package lightmarket.mvc.controller.service.sequrity;
 import lightmarket.mvc.model.domain.User;
 import lightmarket.mvc.service.jpa.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import javax.mail.internet.AddressException;
@@ -10,7 +11,7 @@ import javax.mail.internet.InternetAddress;
 
 import static lightmarket.mvc.controller.service.sequrity.UserValidateService.ValidateForm.*;
 
-@Service
+@Repository
 public class UserValidateService {
 
     public enum ValidateForm{
